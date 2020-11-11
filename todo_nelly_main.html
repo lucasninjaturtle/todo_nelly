@@ -58,7 +58,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
-    <p class="w3-left">Jeans</p>
+    <p class="w3-left">Tienda de Calzado</p>
     <p class="w3-right">
       <i class="fa fa-shopping-cart w3-margin-right"></i>
       <i class="fa fa-search"></i>
@@ -67,7 +67,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
   <!-- Image header -->
   <div class="w3-display-container w3-container">
-    <img src="todo_nelly_logo.jpg" alt="Jeans" style="width:100%">
+    <img src="todo_nelly_logo.jpg" alt="Tienda de Calzado" style="width:100%">
     <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
       <h1 class="w3-jumbo w3-hide-small">Nuevos Modelos</h1>
       <h1 class="w3-hide-large w3-hide-medium">Nuevos Modelos</h1>
@@ -154,24 +154,29 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <h4>Contacto</h4>
         <p>Tiene consultas? puede dejarlas aqui y las responderemos a la brevedad.</p>
         <form action="/action_page.php" target="_blank">
-          <p><input class="w3-input w3-border" type="text" placeholder="Nombre" name="nombre" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="email" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Asunto" name="asunto" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Mensaje" name="mensaje" required></p>
-          <button type="submit" class="w3-button w3-block w3-black">Enviar</button>
+          <p><input class="w3-input w3-border" type="text" placeholder="Nombre" name="nombre" id="nombre" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="email" id='email' required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Asunto" name="asunto" id='asunto' required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Mensaje" name="mensaje" id='mensaje' required></p>
+          <button onclick = "archivarcontactopormail()"  class="w3-button w3-block w3-black">Enviar</button>
         </form>
       </div>
 
       <div class="w3-col s4">
         <h4>About</h4>
+
+        <p><a href="https://wa.me/c/5491153160480">Catalogo WhatsApp</a></p>
+        <p><a href="#">Inicio</a></p>
+
+
+
+
         <p><a href="#">About us</a></p>
         <p><a href="#">We're hiring</a></p>
         <p><a href="#">Support</a></p>
         <p><a href="#">Find store</a></p>
         <p><a href="#">Shipment</a></p>
         <p><a href="#">Payment</a></p>
-        <p><a href="https://wa.me/c/5491153160480">Catalogo WhatsApp</a></p>
-        <p><a href="#">Inicio</a></p>
         <p><a href="#">Help</a></p>
       </div>
 
@@ -189,6 +194,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <a href="https://m.facebook.com/Todo-Nelly-104416087976227/?ref=bookmarks"> <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i></a>
         <a href="https://instagram.com/todo_nelly?igshid=1g65x0dijmvst"> <i class="fa fa-instagram w3-hover-opacity w3-large"></i></a>
       
+        
       </div>
     </div>
   </footer>
