@@ -24,7 +24,7 @@ var popotas = new NuevaZapatilla ("zoo", "ojotas", '500', ['amarillo', 'verde', 
 
 // se puede hacer una pagina HTML especifica solo para cargar las zapatillas como variables y actualizar stocks y precios??
 
-//let variable = document.getElementById ('nombre dato a traer')
+//let variable = document.getElementById ('nombre dato a traer').value (si no pongo el .value me trae undefined, mirar porque hay mas valores a traer)
 
 // funcion para los contactos (aunque ya lo hace el HTML)
 
@@ -76,5 +76,29 @@ function enviaralservidorelcontacto (){
     //poner aca enviar esto al servidor (ver luego como)
 }
 
+function calculatediscprice (precio, cantidad, codigocalzado, descuento){
+    var precio = "precio"
+    var cantidad = "cantidad"
+    var codigocalzado = 'codigocalzado'
+    var descuento = 'descuento'
+
+    if (!descuento){
+        return "su precio de " + codigocalzado + 'es de ' + precio*cantidad;
+    }
+    else {
+        var preciofinaldelcalzado = precio*cantidad*descuento/100;
+
+        return "su precio de " + codigocalzado + 'es de ' + preciofinaldelcalzado;
+    }
+
+        
+    
+}
 
 
+
+// funcion guardardatoscompra()
+
+function guardardatoscompra() {
+    return console.log ("guardardatoscompra() o redireccionar a compra")
+}
