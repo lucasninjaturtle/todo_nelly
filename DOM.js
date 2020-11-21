@@ -1,3 +1,5 @@
+// voy a aplicar alguna magia a las zapatillas pero aun no se bien que
+
 let imagen = document.getElementById("imagen")
 let zapatillajean = document.getElementById("zapatillajean")
 let zapatillacroco = document.getElementById("zapatillacroco")
