@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
 .w3-sidebar a {font-family: "Roboto", sans-serif}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
@@ -72,63 +73,179 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </div>
 
   <!-- Product grid -->
+
+  <!-- ROW 1 -->
+
+
+<div class="w3-row w3-grayscale">
+  <div class="w3-col l3 s6">
+    <div class="w3-container">
+      <img id='hombre-training gris'src="./zapatillas/hombre-training gris.jpg" style="width:100%">
+      <p>Zapatilla Hombre Trainning Gris<br><b>$5.999,99</b></p>
+    </div>
+    <div class="w3-container">
+      <img id='hombre-training1'src="./zapatillas/hombre-training negro.jpg" style="width:100%">
+      <p>Zapatillas Hombre Training Negro<br><b>$5.999,99</b></p>
+    </div>
+  </div>
+
+
+  <!-- ROW 2 -->
+  <div class="w3-col l3 s6">
+    <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="./zapatillas/ninio-cracos.JPG" style="width:100%">
+        <span class="w3-tag w3-display-topleft">Nuevo modelo</span>
+        <div class="w3-display-middle w3-display-hover">
+          <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+      <p>Cracos Infantil<br><b>$2.000,00</b></p>
+    </div>
+    <div class="w3-container">
+      <img src="./zapatillas/infantiles_botines.jpg" style="width:100%">
+      <p>Futbol Infantil<br><b>$3.400,00</b></p>
+    </div>
+  </div>
+<!-- ROW 3 -->
+  <div class="w3-col l3 s6">
+    <div class="w3-container">
+      <img src="./zapatillas/mujer-training.jpg" style="width:100%">
+      <p>Mujer Training<br><b>$5.300,00</b></p>
+    </div>
+    <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="./zapatillas/zapa_lona_unisex_negra.jpg" style="width:100%">
+        <span class="w3-tag w3-display-topleft">Descuento 10%</span>
+        <div class="w3-display-middle w3-display-hover">
+          <button id= "precio_zapa_lona_unisex_negra"class="w3-button w3-black">Modifique la cantidad <i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+      <p>Zapatilla Lona Unisex<br><b class="w3-text-red">$2.000,00</b></p>
+    </div>
+    <div>
+      <input type="number" min="1" max='5' id="cantidad_zapa_lona_unisex_negra" onchange="calculocompra_zapa_lona_unisex_negra()">
+          </div>
+  </div>
+
+
+  <!-- ROW 4 -->
+
+
+  <div class="w3-col l3 s6">
+    <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="./zapatillas/infantil_zapatillas_pups.jpg" style="width:100%">
+        <span class="w3-tag w3-display-topleft"></span>
+        <div class="w3-display-middle w3-display-hover">
+          <button id='precio_infantil_zapatillas_pups' class="w3-button w3-black"> Modifique la cantidad <i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+      
+      <p>Infantil Zapatillas Pups<br><b>$2.200,00</b></p>
+    </div>
+    <div>
+      <input type="number" min="1" max='5' id="cantidad_infantil_zapatillas_pups" onchange="calculocompra_infantil_zapatillas_pups()">
+    </div>
+    <div class="w3-container">
+      
+      <div class="w3-display-container">
+        <img src="./zapatillas/infantil_sandalias.JPG" style="width:100%">
+        <span class="w3-tag w3-display-topleft">Mas vendida</span>
+        <div class="w3-display-middle w3-display-hover">
+          <button id='precio_sandalia_rosa' class="w3-button w3-black"> Modifique la cantidad <i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+      
+      
+      <p>Infantil Sandalias Rosa<br><b id='nuevo_precio'>$1.500,00</b></p>
+    </div>
+          <div>
+      <input type="number" min="1" max='5' id="cantidad_sandalia_rosa" onchange="calculocompra_sandalia_rosa()">
+          </div>
+          
+  </div>
+</div>
+
+
+
+
+
+
+<!-- 
+
   <div class="w3-row w3-grayscale">
     <div class="w3-col l3 s6">
       <div class="w3-container">
-        <img id='zapatillacroco'src="/w3images/jeans1.jpg" style="width:100%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+        <img id='hombre-training gris'src="./zapatillas/hombre-training gris.jpg" style="width:100%">
+        <p>Zapatilla Hombre Trainning Gris<br><b>$2000</b></p>
       </div>
       <div class="w3-container">
         <img src="/w3images/jeans2.jpg" style="width:100%">
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+        <p>abajo hombre gris<br><b>$19.99</b></p>
       </div>
     </div>
 
+
+
+    
     <div class="w3-col l3 s6">
       <div class="w3-container">
         <div class="w3-display-container">
           <img id='zapatillajean'src="zapajean.jpg" style="width:100%">
           <span class="w3-tag w3-display-topleft">New</span>
           <div class="w3-display-middle w3-display-hover">
-            <button onclick="guardardatoscompra()" class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            <button id='compra' onclick='guardardatoscompra()'class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
           </div>
+          
         </div>
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+        <p>la que anda bien<br><b>$19.99</b></p>
       </div>
+      <div>
+        <input type="number" min="0" max='' id="zapacroca" onchange="calculocompra()">
+      </div>
+      <div class="w3-display-container">
+        <img id='zapatillajean'src="zapajean.jpg" style="width:100%">
+        <span class="w3-tag w3-display-topleft">New</span>
+        <div class="w3-display-middle w3-display-hover">
+          <button id='compra' onclick='guardardatoscompra()'class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+        </div>
+        
+      </div>
+      <p>la que anda bien<br><b>$19.99</b></p>
+    </div>
+    <div>
+      <input type="number" min="0" max='' id="zapacroca" onchange="calculocompra()">
+    </div>
+
+      
+          <div class="w3-display-container">
+            <img id='hombre-training1'src="./zapatillas/hombre-training.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft">New</span>
+            <div class="w3-display-middle w3-display-hover">
+              <button id='compra' onclick='guardardatoscompra()'class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            
+          </div>
+          <p>Zapatillas hombre Training Negro<br><b>$19.99</b></p>
+        </div>
+        <div>
+          <input type="number" min="0" max='' id="hombre-training" onchange="calculocompra()">
+        </div>
+      
       <div class="w3-container">
         <img src="/w3images/jeans3.jpg" style="width:100%">
         <p>Washed Skinny Jeans<br><b>$20.50</b></p>
       </div>
     </div>
 
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="/w3images/jeans3.jpg" style="width:100%">
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
-      </div>
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="/w3images/jeans4.jpg" style="width:100%">
-          <span class="w3-tag w3-display-topleft">Sale</span>
-          <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
-        </div>
-        <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
-      </div>
-    </div>
+    
 
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="/w3images/jeans4.jpg" style="width:100%">
-        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="/w3images/jeans1.jpg" style="width:100%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
-      </div>
+    
+
+    
     </div>
-  </div>
+  </div> -->
 
   <!-- Subscribe section -->
   
@@ -229,5 +346,6 @@ function w3_close() {
 <script defer src="functions.js"></script>
 <script defer src="eventos.js"></script>
 <script defer src="DOM.js"></script>
+<script defer src="JSON.js"></script>
 </body>
 </html>

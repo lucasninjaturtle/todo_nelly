@@ -2,7 +2,6 @@
 
 
 
-
 // funciones constructoras
 
 
@@ -55,7 +54,7 @@ var popotas = new NuevaZapatilla ("zoo", "ojotas", '500', ['amarillo', 'verde', 
 
 
 
-function archivarcontactopormail (){
+var archivarcontactopormail = function archivarcontactopormail (){
 debugger
 
 var nombre = document.getElementById ("nombre").value
@@ -76,7 +75,7 @@ function enviaralservidorelcontacto (){
     //poner aca enviar esto al servidor (ver luego como)
 }
 
-function calculatediscprice (precio, cantidad, codigocalzado, descuento){
+var calculatediscprice = function calculatediscprice (precio, cantidad, codigocalzado, descuento){
     var precio = "precio"
     var cantidad = "cantidad"
     var codigocalzado = 'codigocalzado'
@@ -99,6 +98,53 @@ function calculatediscprice (precio, cantidad, codigocalzado, descuento){
 
 // funcion guardardatoscompra()
 
-function guardardatoscompra() {
+
+var compra = document.getElementById ('compra')
+console.log(compra);
+
+var guardardatoscompra = function guardardatoscompra(id, precio, descripcion, cantidad) {
+    
+    document.getElementById
+    
+    
     return console.log ("guardardatoscompra() o redireccionar a compra")
 }
+
+
+
+
+
+
+// Funcion de calculo
+
+
+const calculocompra_sandalia_rosa = function (){
+    let cantidad = document.getElementById ("cantidad_sandalia_rosa").value;
+    let zapatilla = infantil_sandalias
+    let total = cantidad*zapatilla.precio
+    document.getElementById("precio_sandalia_rosa").innerHTML = "ARS " + total;
+    return console.log(cantidad)
+    } 
+
+
+const calculocompra_infantil_zapatillas_pups = function (){
+        let cantidad = document.getElementById ("cantidad_infantil_zapatillas_pups").value;
+        let zapatilla = infantil_zapatillas_pups
+        let total = cantidad*zapatilla.precio
+        document.getElementById("precio_infantil_zapatillas_pups").innerHTML = "ARS " + total;
+        return console.log(cantidad)
+        } 
+
+
+const calculocompra_zapa_lona_unisex_negra = function (){
+        let cantidad = document.getElementById ("cantidad_zapa_lona_unisex_negra").value;
+        let zapatilla = zapa_lona_unisex_negra
+        let descuento = cantidad*zapatilla.precio*zapatilla.descuento/100
+        let total = (cantidad*zapatilla.precio)-descuento
+        document.getElementById("precio_zapa_lona_unisex_negra").innerHTML = "ARS " + total;
+        return console.log(cantidad)
+        }         
+
+
+
+
