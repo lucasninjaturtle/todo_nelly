@@ -12,3 +12,6 @@ zapatillacroco.addEventListener("mouseout", () => zapatillacroco.style.cursor = 
 
 
 document.addEventListener('dblclick', () => aplicoColor())
+
+
+

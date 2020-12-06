@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="App.css">
 <style>
 .w3-sidebar a {font-family: "Roboto", sans-serif}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
@@ -18,7 +19,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-    <h3 class="w3-wide"><b>LOGO Todo Nelly</b></h3>
+    <div>
+    <h3 class="efectos" id="efecto" class="w3-wide"><b>TODO NELLY</b></h3>
+  </div>
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
     
@@ -118,7 +121,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <img src="./zapatillas/zapa_lona_unisex_negra.jpg" style="width:100%">
         <span class="w3-tag w3-display-topleft">Descuento 10%</span>
         <div class="w3-display-middle w3-display-hover">
-          <button id= "precio_zapa_lona_unisex_negra"class="w3-button w3-black">Modifique la cantidad <i class="fa fa-shopping-cart"></i></button>
+          <button onclick="agregarcarrito()" id= "precio_zapa_lona_unisex_negra"class="w3-button w3-black">Modifique la cantidad <i class="fa fa-shopping-cart"></i></button>
         </div>
       </div>
       <p>Zapatilla Lona Unisex<br><b class="w3-text-red">$2.000,00</b></p>

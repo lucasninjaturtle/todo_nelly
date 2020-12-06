@@ -55,8 +55,6 @@ var popotas = new NuevaZapatilla ("zoo", "ojotas", '500', ['amarillo', 'verde', 
 
 
 var archivarcontactopormail = function archivarcontactopormail (){
-debugger
-
 var nombre = document.getElementById ("nombre").value
 var email = document.getElementById ("email").value
 var asunto = document.getElementById ("asunto").value
@@ -110,7 +108,15 @@ var guardardatoscompra = function guardardatoscompra(id, precio, descripcion, ca
     return console.log ("guardardatoscompra() o redireccionar a compra")
 }
 
+//Funcion carrito
 
+const agregarcarrito = function (){
+
+    return console.log("hola")
+//hacer logica de que no puede haber mas del mismo pedido con un ID
+//acumular en el localstorage la compra para lanzarla a otra pagina tipo legacy (./carrito)
+
+}
 
 
 
@@ -147,4 +153,12 @@ const calculocompra_zapa_lona_unisex_negra = function (){
 
 
 
+
+//Jquery Efecto
+
+var efecto = setInterval(() => {
+    $("#efecto").fadeOut(500, function(){
+        $("#efecto").fadeIn(500)
+    })
+}, 2000);
 
