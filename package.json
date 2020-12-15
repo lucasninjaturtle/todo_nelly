@@ -4,7 +4,7 @@
   "description": "",
   "main": "AJAX.js",
   "scripts": {
-    "deploy": "gh-pages -d todo_nel"
+    "deploy": "gh-pages -d todo_nelly"
   },
   "repository": {
     "type": "git",
