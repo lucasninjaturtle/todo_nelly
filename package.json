@@ -4,7 +4,7 @@
   "description": "",
   "main": "AJAX.js",
   "scripts": {
-    "deploy": "gh -d todo_nelly"
+    "deploy": "gh-pages -d todo_nelly"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/lucasninjaturtle/todo_nelly/issues"
   },
-  "homepage": "https://github.com/lucasninjaturtle/todo_nelly",
+  "homepage": "https://lucasninjaturtle.github.io/todo_nelly",
   "devDependencies": {
     "gh-pages": "^3.1.0"
   }
