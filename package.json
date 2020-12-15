@@ -1,0 +1,23 @@
+{
+  "name": "todo_nelly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "AJAX.js",
+  "scripts": {
+    "deploy": "gh -d todo_nelly"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasninjaturtle/todo_nelly.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasninjaturtle/todo_nelly/issues"
+  },
+  "homepage": "https://github.com/lucasninjaturtle/todo_nelly",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
