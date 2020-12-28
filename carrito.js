@@ -21,7 +21,7 @@ const showCart = ()=>{
     var sandaliaRosa = localStorage.getItem ('precio_sandalia_rosa');
     var ZapaLonaUnisex = localStorage.getItem ('precio_zapa_lona_unisex_negra');
     var pups = localStorage.getItem ('precio_infantil_zapatillas_pups');
-debugger
+
     var total = 0;
     const checkTotal = ()=>{
     var sandaliaRosaPrecio = 0
@@ -43,7 +43,7 @@ debugger
         return total;
 
     }
-    debugger
+    
     checkTotal();
     
 
