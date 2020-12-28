@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<title>Todo Nelly</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="App.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <div>
+    <h3 class="efectos" id="efecto" class="w3-wide"><b>TODO NELLY</b></h3>
+  </div>
+  </div>
+  
+  
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left"></p>
+    <p class="w3-right">
+      
+    </p>
+  </header>
+
+
+  <div> 
+    <p class='shoppCart'> Shopping Cart</p>
+
+    
+      <div class='calzado-box' id='sandaliaRosa'></div>
+      <div class='calzado-box'id='ZapaLonaUnisex'></div>
+      <div class='calzado-box'id='pups'></div>
+
+
+      
+    
+    <div id="total">
+    
+
+
+    </div>
+    
+    <div class="w3-row w3-grayscale">
+      <div class="w3-col l3 s6">
+        <div class="w3-container m3">
+
+          <button id='cartButton' class='cart' onclick="showCart()">Show my Cart</button>
+        
+
+        </div>
+        
+      </div>
+    
+    </div>
+  
+
+  
+
+      <div class="w3-col s4 w3-justify">
+        
+        <p><i class="fa fa-fw fa-map-marker"></i> Todo Nelly</p>
+        <p><i class="fa fa-fw fa-phone"></i> +54 9 11 5316-0480 </p>
+        <p><i class="fa fa-fw fa-envelope"></i> todonelly@todonelly.com.ar</p>
+        <h4>Metodos de pago aceptados</h4>
+        <p><i class="fa fa-fw fa-cc-visa"></i> Visa</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <p><i class="fa fa-fw fa-paypal"></i> Mercado Pago</p>
+        <p><i class="fa fa-fw fa-crypto"></i> Efectivo</p>
+        <br>
+        <a href="https://m.facebook.com/Todo-Nelly-104416087976227/?ref=bookmarks"> <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i></a>
+        <a href="https://instagram.com/todo_nelly?igshid=1g65x0dijmvst"> <i class="fa fa-instagram w3-hover-opacity w3-large"></i></a>
+      
+        
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by Lucas <a  title="Lucas" target="_blank" class="w3-hover-opacity"></a></div>
+
+  <!-- End page content -->
+</div>
+
+
+
+
+</script>
+<script defer src="functions.js"></script>
+<script defer src="eventos.js"></script>
+<script defer src="DOM.js"></script>
+<script defer src="JSON.js"></script>
+<script defer src="carrito.js"></script>
+<script defer src="AJAX.js"></script>
+</body>
+</html>

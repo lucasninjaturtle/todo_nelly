@@ -55,8 +55,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <header class="w3-container w3-xlarge">
     <p class="w3-left">Tienda de Calzado</p>
     <p class="w3-right">
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
-      <i class="fa fa-search"></i>
+      <a href="./todo_nelly_carrito.html"> <i class="fa fa-shopping-cart w3-margin-right"></i> </a>
+      
     </p>
   </header>
 
@@ -83,12 +83,32 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <div class="w3-row w3-grayscale">
   <div class="w3-col l3 s6">
     <div class="w3-container">
-      <img id='hombre-training gris'src="./zapatillas/hombre-training gris.jpg" style="width:100%">
-      <p>Zapatilla Hombre Trainning Gris<br><b>$5.999,99</b></p>
+
+      <div class="w3-display-container">
+        <img id='hombre-training gris'class="zapatillasHome"src="./zapatillas/hombre-training gris.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+          <button class="w3-button w3-black">Sin Stock<i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+      <p>Hombre Trainning Gris<br><b>$5.999,99</b></p>
+    </div>
+    <div style="padding: 5px; text-align: center;">
+      <input type="number" min="0" max='0' >
     </div>
     <div class="w3-container">
-      <img id='hombre-training1'src="./zapatillas/hombre-training negro.jpg" style="width:100%">
-      <p>Zapatillas Hombre Training Negro<br><b>$5.999,99</b></p>
+<!-- BOTON DE SIN STOCK -->
+      <div class="w3-display-container">
+        <img id='hombre-training1'class="zapatillasHome"src="./zapatillas/hombre-training negro.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+          <button class="w3-button w3-black">Sin Stock<i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+      <!-- BOTON DE SIN STOCK -->
+      
+      <p>Hombre Training Negro<br><b>$5.999,99</b></p>
+    </div>
+    <div style="padding: 5px; text-align: center;">
+      <input type="number" min="0" max='0' >
     </div>
   </div>
 
@@ -97,28 +117,50 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <div class="w3-col l3 s6">
     <div class="w3-container">
       <div class="w3-display-container">
-        <img src="./zapatillas/ninio-cracos.JPG" style="width:100%">
+        <img src="./zapatillas/ninio-cracos.JPG" class="zapatillasHome" style="width:100%">
         <span class="w3-tag w3-display-topleft">Nuevo modelo</span>
         <div class="w3-display-middle w3-display-hover">
-          <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          <button class="w3-button w3-black">Sin Stock <i class="fa fa-shopping-cart"></i></button>
         </div>
       </div>
       <p>Cracos Infantil<br><b>$2.000,00</b></p>
     </div>
+    <div style="padding: 5px; text-align: center;">
+      <input type="number" min="0" max='0' >
+    </div>
     <div class="w3-container">
-      <img src="./zapatillas/infantiles_botines.jpg" style="width:100%">
+      <div class="w3-display-container">
+        <img src="./zapatillas/infantiles_botines.jpg" class="zapatillasHome" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+          <button class="w3-button w3-black">Sin Stock<i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+      
       <p>Futbol Infantil<br><b>$3.400,00</b></p>
+    </div>
+    <div style="padding: 5px; text-align: center;">
+      <input type="number" min="0" max='0' >
     </div>
   </div>
 <!-- ROW 3 -->
   <div class="w3-col l3 s6">
     <div class="w3-container">
-      <img src="./zapatillas/mujer-training.jpg" style="width:100%">
+      <div class="w3-display-container">
+        <img src="./zapatillas/mujer-training.jpg" class="zapatillasHome" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+          <button class="w3-button w3-black">Sin Stock<i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+      
+      
       <p>Mujer Training<br><b>$5.300,00</b></p>
+    </div>
+    <div style="padding: 5px; text-align: center;">
+      <input type="number" min="0" max='0' >
     </div>
     <div class="w3-container">
       <div class="w3-display-container">
-        <img src="./zapatillas/zapa_lona_unisex_negra.jpg" style="width:100%">
+        <img src="./zapatillas/zapa_lona_unisex_negra.jpg" class="zapatillasHome" style="width:100%">
         <span class="w3-tag w3-display-topleft">Descuento 10%</span>
         <div class="w3-display-middle w3-display-hover">
           <button onclick="agregarcarrito()" id= "precio_zapa_lona_unisex_negra"class="w3-button w3-black">Modifique la cantidad <i class="fa fa-shopping-cart"></i></button>
@@ -126,9 +168,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       </div>
       <p>Zapatilla Lona Unisex<br><b class="w3-text-red">$2.000,00</b></p>
     </div>
-    <div>
+    <div style="padding: 5px; text-align: center;">
       <input type="number" min="1" max='5' id="cantidad_zapa_lona_unisex_negra" onchange="calculocompra_zapa_lona_unisex_negra()">
-          </div>
+    </div>
   </div>
 
 
@@ -138,33 +180,33 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <div class="w3-col l3 s6">
     <div class="w3-container">
       <div class="w3-display-container">
-        <img src="./zapatillas/infantil_zapatillas_pups.jpg" style="width:100%">
+        <img src="./zapatillas/infantil_zapatillas_pups.jpg" class="zapatillasHome"style="width:100%">
         <span class="w3-tag w3-display-topleft"></span>
         <div class="w3-display-middle w3-display-hover">
-          <button id='precio_infantil_zapatillas_pups' class="w3-button w3-black"> Modifique la cantidad <i class="fa fa-shopping-cart"></i></button>
+          <button onclick="agregarcarrito()" id='precio_infantil_zapatillas_pups' class="w3-button w3-black"> Modifique la cantidad <i class="fa fa-shopping-cart"></i></button>
         </div>
       </div>
       
       <p>Infantil Zapatillas Pups<br><b>$2.200,00</b></p>
     </div>
-    <div>
+    <div style="padding: 5px; text-align: center;">
       <input type="number" min="1" max='5' id="cantidad_infantil_zapatillas_pups" onchange="calculocompra_infantil_zapatillas_pups()">
     </div>
     <div class="w3-container">
       
       <div class="w3-display-container">
-        <img src="./zapatillas/infantil_sandalias.JPG" style="width:100%">
+        <img src="./zapatillas/infantil_sandalias.JPG" class="zapatillasHome"style="width:100%">
         <span class="w3-tag w3-display-topleft">Mas vendida</span>
         <div class="w3-display-middle w3-display-hover">
-          <button id='precio_sandalia_rosa' class="w3-button w3-black"> Modifique la cantidad <i class="fa fa-shopping-cart"></i></button>
+          <button onclick="agregarcarrito()" id='precio_sandalia_rosa' class="w3-button w3-black"> Modifique la cantidad <i class="fa fa-shopping-cart"></i></button>
         </div>
       </div>
       
       
       <p>Infantil Sandalias Rosa<br><b id='nuevo_precio'>$1.500,00</b></p>
     </div>
-          <div>
-      <input type="number" min="1" max='5' id="cantidad_sandalia_rosa" onchange="calculocompra_sandalia_rosa()" onClick="pokemon()">
+          <div style="padding: 5px; text-align: center;"> 
+      <input type="number" min="1" max='5' id="cantidad_sandalia_rosa" onchange="calculocompra_sandalia_rosa()">
           </div>
           
   </div>
@@ -285,9 +327,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
       <div class="w3-col s4 w3-justify">
         <h4>Tienda</h4>
-        <p><i class="fa fa-fw fa-map-marker"></i> Todo Nelly (Alberti (direccion)</p>
+        <p><i class="fa fa-fw fa-map-marker"></i> Todo Nelly</p>
         <p><i class="fa fa-fw fa-phone"></i> +54 9 11 5316-0480 </p>
-        <p><i class="fa fa-fw fa-envelope"></i> todonelly@gmail.com</p>
+        <p><i class="fa fa-fw fa-envelope"></i> todonelly@todonelly.com.ar</p>
         <h4>Metodos de pago aceptados</h4>
         <p><i class="fa fa-fw fa-cc-visa"></i> Visa</p>
         <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>

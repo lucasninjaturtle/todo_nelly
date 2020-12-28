@@ -14,7 +14,7 @@ clickForm2.addEventListener('click', function(){
     .then(objeto2 =>{
         
         if (objeto2.weight === 60){
-            alert ('Estas zapas y esta promo son para vos!!')
+            alert ('Esta promo es para vos!!')
         }
         console.log(objeto2)
 
