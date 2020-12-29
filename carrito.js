@@ -4,6 +4,7 @@ const agregarcarrito = function (){
     var zapatillaId = event.srcElement.id;
     var precio = document.getElementById (zapatillaId).innerHTML
             localStorage.setItem (`${zapatillaId}`,precio);
+            alert("Se ha agregado a su carrito")
             
         
 
