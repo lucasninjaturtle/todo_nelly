@@ -3,9 +3,9 @@
   "name": "todo_nelly",
   "version": "1.0.0",
   "description": "",
-  "main": "AJAX.js",
+  "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d gh"
+    "deploy": "gh-pages -d todo_nelly"
   },
   "repository": {
     "type": "git",

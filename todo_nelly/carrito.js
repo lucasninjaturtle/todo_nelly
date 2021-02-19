@@ -91,7 +91,7 @@ const eraseCart = ()=>{
     $("#ZapaLonaUnisex").empty();
     $("#pups").empty();
     $("#total").empty();
-    $("#total").append(`<button class="eraseCart" onclick='eraseCart()'> <a href="./todo_nelly_main.html"> Home </a> </button>`  );
+    $("#total").append(`<button class="eraseCart" onclick='eraseCart()'> <a href="./Index.html"> Home </a> </button>`  );
 
 }
 
